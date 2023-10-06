@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- REMIXICONS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+   <!-- CSS personalizado del segundo archivo -->
+   <link rel="stylesheet" href="STYLE.CSS">
+
+   <!-- Agrega aquí el contenido del encabezado del primer archivo -->
+   <!-- Inicio del contenido del encabezado del primer archivo -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>INICIO DE SESIÓN</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
+   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+   <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+   <!-- Fin del contenido del encabezado del primer archivo -->
+
+   <title>Formulario de Inicio de Sesión y Registro - CodeCraftedWeb</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <h1 class="logo">Delish</h1>
+            <ul class="menu-items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <button class="btn">RESERVAR UNA MESA</button>
+            </ul>
+        </div>
+    </nav>
+  </header>
+   <div class="login">
+      <img src="img/3.jpg" alt="imagen" class="login__bg">
+
+      <form action="" class="login__form login__form--login">
+         <h1 class="login__title">Inicio de Sesión</h1>
+
+         <div class="login__inputs">
+            <div class="login__box">
+               <input type="email" placeholder="Correo Electrónico" required class="login__input">
+               <i class="ri-mail-fill"></i>
+            </div>
+
+            <div class="login__box">
+               <input type="password" placeholder="Contraseña" required class="login__input" id="password-input">
+               <i class="ri-lock-2-fill"></i>
+               <i class="ri-eye-fill" id="toggle-password"></i>
+            </div>
+         </div>
+
+         <div class="login__check">
+            <div class="login__check-box">
+               <input type="checkbox" class="login__check-input" id="user-check">
+               <label for="user-check" class="login__check-label">Recordar contraseña</label>
+            </div>
+
+            <a href="#" class="login__forgot">¿Olvidaste la Contraseña?</a>
+         </div>
+
+         <button type="submit" class="login__button">Iniciar Sesión</button>
+
+         <div class="login__register">
+            ¿No tienes una cuenta? <a href="#" class="login__register-link" id="registro-link">Registrarse</a>
+         </div>
+      </form>
+
+      <form action="" class="login__form login__form--registro" id="registro-form">
+         <h1 class="login__title">Registro</h1>
+
+         <div class="login__inputs">
+            <div class="login__box">
+               <input type="text" placeholder="Nombre" required class="login__input">
+               <i class="ri-user-fill"></i>
+            </div>
+
+            <div class="login__box">
+               <input type="email" placeholder="Correo Electrónico" required class="login__input">
+               <i class="ri-mail-fill"></i>
+            </div>
+
+            <div class="login__box">
+               <input type="password" placeholder="Contraseña" required class="login__input" id="password-input-registro">
+               <i class="ri-lock-2-fill"></i>
+               <i class="ri-eye-fill" id="toggle-password-registro"></i>
+            </div>
+         </div>
+
+         <button type="submit" class="login__button">Registrarse</button>
+
+         <div class="login__register">
+            ¿Ya tienes una cuenta? <a href="#" class="login__register-link" id="inicio-link">Iniciar Sesión</a>
+         </div>
+      </form>
+   </div>
+
+   <script src="STYLE.JS"></script>
+</body>
+</html>
